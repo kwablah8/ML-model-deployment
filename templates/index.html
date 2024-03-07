@@ -18,13 +18,16 @@
 <body>
     <h1>Email Spam Classifier</h1>
     <div>
-        <form action="">
-            <textarea name="content" id="" cols="60" rows="12"
-                placeholder="Type or paste your email message here."></textarea>
+        <form method="POST">
+            <textarea name="content" id="" cols="60" rows="12" placeholder="Type or paste your email message here."
+                value="{{ text }}">{{ text }}</textarea>></textarea>
             <div>
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </div>
         </form>
+    </div>
+    <div>
+        <p id="display"></p>
     </div>
 </body>
 
