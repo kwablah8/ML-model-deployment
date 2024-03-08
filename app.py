@@ -2,8 +2,8 @@ import pickle
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-cv = pickle.load(open("models/cv.pkl"))
-clf = pickle.load(open("models/clf.pkl"))
+cv = pickle.load(open("models/cv.pkl", 'rb'))
+clf = pickle.load(open("models/clf.pkl", 'rb'))
 
 
 @app.route("/")
